@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> país </title>
+</head>
+<body>
+    <h1>seu país</h1>
+    <input type="text" name="txtvel" id="txtvel">
+    <input type="button" value="verificar" onclick="consultar()">
+    <div id="resultado">
+
+    </div>
+     
+    <script>
+          
+        function consultar() 
+        {
+            var txt = window.document.getElementById('txtvel').value
+            var resultado= document.getElementById('resultado')
+            var pais = 'brasil'
+            console.log(` vivendo em ${txt}`)
+            if (txt == pais){
+               console.log('brasileiro');
+               resultado.innerHTML = 'brasileiro';
+            }
+            else{
+                console.log('estrangeiro');
+                resultado.innerHTML = 'estrangeiro';
+            }                
+        }
+    </script>
+    
+</body>
+</html>
